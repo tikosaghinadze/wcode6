@@ -89,3 +89,35 @@ header nav ul li a {
   width: 100%;
   height: 100%;
 }
+/* section 2's styles */
+.section2 {
+  padding: 24px 24px 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f3f3;
+}
+.features li {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.features div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.features h3 {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.features p {
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
