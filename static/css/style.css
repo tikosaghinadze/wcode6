@@ -197,9 +197,17 @@ footer {
   padding: 50px 30px;
   display: flex;
   flex-direction: column;
+  align-items: start;
+  text-align: start;
+}
+footer img {
+  width: 87px;
+  margin: auto;
+  margin-bottom: 30px;
 }
 .category-div {
   display: flex;
+  justify-content: space-between;
   gap: 30px;
 }
 .category-div div {
@@ -209,7 +217,6 @@ footer {
 }
 .category-div div h3 {
   color: #fff;
-  text-align: center;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -220,18 +227,88 @@ footer {
 .category-div div ul li {
   color: #fff;
   font-family: Inter;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px; /* 142.857% */
+  text-align: start;
+  align-items: start;
 }
 .category-div div ul {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 8px;
 }
 #sub-div {
   display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+  footer img {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    margin: 0;
+    margin-bottom: 40px;
+    margin-right: 20px;
+  }
+  .category-div {
+    width: 100%;
+    display: flex;
+    text-align: start;
+    align-items: start;
+    gap: 100px;
+  }
+  .category-div div h3 {
+    text-align: start;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .category-div div ul {
+    align-items: start;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+  }
+  .category-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+    align-items: start;
+  }
+  .category-div div h3 {
+    text-align: start;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .category-div div ul {
+    align-items: start;
+  }
+  .category-div div ul li {
+    align-items: start;
+    font-size: 14px;
+  }
+  #sub-div {
+    display: block;
+  }
+  #sub-div p {
+    color: #fff;
+    font-size: 14px;
+    font-family: Inter;
+    line-height: 20px;
+    opacity: 0.4;
+    width: 228px;
+  }
 }
